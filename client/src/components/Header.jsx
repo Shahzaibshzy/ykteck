@@ -16,14 +16,16 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex absolute right-10 transform -translate-x-1/2 space-x-10 text-2xl font-semibold ">
           <a
-            href="#services" className="transition duration-500 ease-in-out 
+            href="#services"
+            className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
             Services
           </a>
           <a
-              href="#footer" className="transition duration-500 ease-in-out 
+            href="#footer"
+            className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
@@ -62,15 +64,26 @@ const Header = () => {
             : "max-h-0 opacity-0 scale-y-95"
         } bg-black bg-opacity-10 backdrop-blur-sm text-gray-200 px-4 py-2 space-y-2 origin-top`}
       >
-        <button className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black">
+        <a
+          href="#services"
+          className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black"
+        >
           Services
-        </button>
-        <button className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black">
+        </a>
+        <a
+          href="#footer"
+          className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black"
+        >
           About
-        </button>
-        <button className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black">
+        </a>
+        <a
+          href="https://www.linkedin.com/company/102501800"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black"
+        >
           Careers
-        </button>
+        </a>
       </div>
     </header>
   );
