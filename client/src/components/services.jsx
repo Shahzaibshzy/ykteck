@@ -29,7 +29,7 @@ const services = [
 
 const ServiceCard = () => {
   return (
-    <section className="bg-gray-100 py-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24" data-aos="fade-up">
+    <section id="services" className="bg-gray-100 py-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24" data-aos="fade-up">
       <h2 className="text-3xl font-bold text-center mb-10 md:text-6xl ">
         Services
       </h2>

@@ -15,20 +15,20 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex absolute right-10 transform -translate-x-1/2 space-x-10 text-2xl font-semibold ">
-          <button
-            className="transition duration-500 ease-in-out 
+          <a
+            href="#services" className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
             Services
-          </button>
-          <button
-            className="transition duration-500 ease-in-out 
+          </a>
+          <a
+              href="#footer" className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
             About
-          </button>
+          </a>
 
           <a
             href="https://www.linkedin.com/company/102501800"

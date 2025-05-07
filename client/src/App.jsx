@@ -15,12 +15,12 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="scroll-smooth">
       <BackgroundVideo />
       <Header />
       <ServicesSection />
       <Footer />
-    </>
+    </ div>
   );
 }
 
