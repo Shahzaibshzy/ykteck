@@ -1,9 +1,12 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import BackgroundVideo from "./components/BackgroundVideo";
 import ServicesSection from "./components/services";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
+import AboutPage from "./components/AboutPage";
+import ServicesPage from "./components/ServicesPage";
 import "aos/dist/aos.css";
 
 function App() {
@@ -15,12 +18,22 @@ function App() {
   }, []);
 
   return (
-    <div className="scroll-smooth">
-      <BackgroundVideo />
-      <Header />
-      <ServicesSection />
-      <Footer />
-    </ div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <BackgroundVideo />
+              <Header />
+              <ServicesSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Router>
   );
 }
 

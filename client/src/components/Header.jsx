@@ -3,6 +3,7 @@ import React from "react";
 import logo from "/logo.png";
 import "tailwindcss/tailwind.css";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,10 +12,18 @@ const Header = () => {
     <header className="absolute top-0 left-0 w-full z-10" data-aos="fade-up">
       <div className="flex justify-between items-center px-4 md:px-8 py-4 text-white bg-black bg-opacity-10 backdrop-blur-md">
         {/* Left - Logo */}
-        <img src={logo} alt="logo" className="hidden md:block w-36 ml-24" />
+        <img src={logo} alt="logo" className="hidden lg:block w-36 ml-24" />
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex absolute right-10 transform -translate-x-1/2 space-x-10 text-2xl font-semibold ">
+        <nav className="hidden lg:flex  absolute right-10 transform -translate-x-1/2 space-x-10 text-2xl font-semibold ">
+        <a
+            href="#services"
+            className="transition duration-500 ease-in-out 
+           transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
+           "
+          >
+            Home
+          </a>
           <a
             href="#services"
             className="transition duration-500 ease-in-out 
@@ -23,14 +32,14 @@ const Header = () => {
           >
             Services
           </a>
-          <a
-            href="#footer"
+          <Link
+            to="/about"
             className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
             About
-          </a>
+          </Link>
 
           <a
             href="https://www.linkedin.com/company/102501800"
@@ -46,7 +55,7 @@ const Header = () => {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -64,6 +73,12 @@ const Header = () => {
             : "max-h-0 opacity-0 scale-y-95"
         } bg-black bg-opacity-10 backdrop-blur-sm text-gray-200 px-4 py-2 space-y-2 origin-top`}
       >
+        <a
+          href="#services"
+          className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black"
+        >
+          Services
+        </a>
         <a
           href="#services"
           className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black"

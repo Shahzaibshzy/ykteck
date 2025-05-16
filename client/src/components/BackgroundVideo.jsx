@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-
-const BackgroundVideo = () => {
+const BackgroundVideo = ({ title, description }) => {
   return (
     <div className="relative w-full h-screen overflow-hidden text-white">
-      {/* Background video */}
       <video
         autoPlay
         loop
@@ -15,7 +13,6 @@ const BackgroundVideo = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Foreground content */}
       <div className="flex items-center h-full px-6 md:px-20">
         <div className="max-w-2xl text-left space-y-12">
           <motion.h1
@@ -24,7 +21,7 @@ const BackgroundVideo = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Crafting Innovative Software Solutions
+            {title}
           </motion.h1>
 
           <motion.p
@@ -33,7 +30,7 @@ const BackgroundVideo = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            We help businesses thrive in the digital age with custom software development, expert IT services, and a strong focus on scalability, design, and innovation — building not just apps, but digital experiences that stand out.
+            {description}
           </motion.p>
         </div>
       </div>
