@@ -73,7 +73,7 @@ const Footer = () => {
 
         {/* Footer Content */}
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-28 mb-8 mt-28"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-28 mb-8 mt-28 md:ml-20"
           data-aos="fade-up"
         >
           {/* About Us */}
@@ -167,9 +167,10 @@ const Footer = () => {
         {/* Copyright Section */}
         <div
           className="border-t
-         border-gray-700 pt-4 mt-24 flex flex-col lg:flex-row justify-between items-center text-sm"
+         border-gray-700 pt-4 mt-24 flex flex-col lg:flex-row justify-between items-center text-sm "
+         
         >
-          <ul className="flex space-x-4 mt-4 lg:mt-0">
+          <ul className="flex space-x-4 mt-4 lg:mt-0 md:ml-20">
             <li>
               <a href="#" className="hover:underline">
                 Terms of Use

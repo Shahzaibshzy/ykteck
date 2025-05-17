@@ -1,14 +1,18 @@
 import React from "react";
+import Header  from "./Header";
 import BackgroundVideo from "../components/BackgroundVideo";
+import SplashCursor from "../data/SplashCursor"
 import heroContent from "../data/heroContent";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
     return (
         <>
+        <Header />
+        <SplashCursor/>
           <BackgroundVideo
-            title={heroContent.services.title}
-            description={heroContent.services.description}
+            title={heroContent.about.title}
+            description={heroContent.about.description}
           />
           {/* Your service-specific content here */}
           <Footer />

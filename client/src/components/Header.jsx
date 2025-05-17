@@ -16,22 +16,23 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex  absolute right-10 transform -translate-x-1/2 space-x-10 text-2xl font-semibold ">
-        <a
-            href="#services"
+        <Link
+        to="/"
+
             className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
             Home
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+          to="/services"
             className="transition duration-500 ease-in-out 
            transform hover:-translate-y-1 hover:scale-110 hover:text-white rounded-lg py-4 
            "
           >
             Services
-          </a>
+          </Link>
           <Link
             to="/about"
             className="transition duration-500 ease-in-out 
@@ -74,7 +75,7 @@ const Header = () => {
         } bg-black bg-opacity-10 backdrop-blur-sm text-gray-200 px-4 py-2 space-y-2 origin-top`}
       >
         <a
-          href="#services"
+          
           className="block w-full text-left text-xl px-4 py-2 rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-black"
         >
           Services
