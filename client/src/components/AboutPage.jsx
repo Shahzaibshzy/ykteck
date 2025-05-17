@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 const AboutPage = () => {
     return (
         <>
-        <Header />
         <SplashCursor/>
           <BackgroundVideo
             title={heroContent.about.title}

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import AboutPage from "./components/AboutPage";
 import ServicesPage from "./components/ServicesPage";
+import Header from "./components/Header";
 
 import "aos/dist/aos.css";
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <Router>
-
+      <Header/>
       <Routes>
         <Route
           path="/"

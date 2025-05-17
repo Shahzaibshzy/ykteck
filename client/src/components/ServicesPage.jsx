@@ -1,13 +1,15 @@
 import React from "react";
 import BackgroundVideo from "../components/BackgroundVideo";
 import heroContent from "../data/heroContent";
+import SplashCursor from "../data/SplashCursor"
 import Footer from "../components/Footer";
-import Header from "../components/Header"
+
+
 
 const ServicesPage = () => {
   return (
     <>
-    <Header/>
+    <SplashCursor/>
       <BackgroundVideo
         title={heroContent.services.title}
         description={heroContent.services.description}
